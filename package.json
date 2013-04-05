@@ -1,0 +1,9 @@
+{
+  "name": "Antares",
+  "version": "0.1.0",
+  "devDependencies": {
+    "grunt": "~0.4.0",
+    "grunt-contrib-less": "~0.5.0",
+    "grunt-contrib-watch": "~0.3.1"
+  }
+}

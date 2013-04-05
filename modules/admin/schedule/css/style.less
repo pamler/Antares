@@ -1,0 +1,185 @@
+#kpi-gbmi-tab,
+#schedule-jobInfo-tab,
+#schedule-planInfo-tab,
+#schedule-logInfo-tab{
+	margin-bottom:0px;
+	margin-left:10px;
+	margin-top:10px;
+}
+
+#kpi-gbmi-tab li > a,
+#schedule-jobInfo-tab li > a,
+#schedule-planInfo-tab li > a,
+#schedule-logInfo-tab li > a {
+	color:#666;
+	&:hover {
+		color:#222;
+	}
+}
+
+#kpi-gbmi-tab li.active > a,
+#schedule-jobInfo-tab li.active > a,
+#schedule-planInfo-tab li.active > a,
+#schedule-logInfo-tab li.active > a{
+	background:none;
+	border:0;
+	color:#004889;
+	font-weight:bold;
+}
+
+
+.form-widget {
+	background: #f7f7f7;
+    background: -webkit-gradient(linear, left top, left bottom, from(#f7f7f7), to(#eaeaea));
+    background: -moz-linear-gradient(top,  #f7f7f7,  #eaeaea);
+    filter:  progid:DXImageTransform.Microsoft.gradient(startColorstr='#f7f7f7', endColorstr='#eaeaea');
+    padding: 10px;
+    margin-top:20px;
+    margin-bottom:40px;
+    -moz-box-shadow:inset 0 1px 0 #fff;
+    -webkit-box-shadow:inset 0 1px 0 #fff;
+    box-shadow:inset 0 1px 0 #fff;
+    border: 1px solid #ccc;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -khtml-border-radius: 5px;
+    border-radius: 5px;
+}
+
+.slider {
+	margin-top: -2px;
+	margin-left: 10px;
+	height: 4px;
+	width: 88px;
+	background: #155fa1;
+	position: relative;
+}
+
+.form-widget h2 {
+    margin-top: 0;
+    font-size: 15px;
+    line-height:20px;
+}
+
+.form-widget .group {
+	margin-bottom:20px;
+}
+
+.form-widget .control-group {
+	text-align:left;
+}
+
+.form-widget hr {
+	display:block;
+    height:1px;
+    border:0;   
+    border-top:1px solid #cccccc;
+    margin:5px 0px 10px 0px;
+    padding:0;
+}
+
+.form-widget button {
+    margin: 10px;
+    font-size: 13px;
+}
+
+.job-info .form-widget label,
+.plan-info .form-widget label,
+.log-info .form-widget label,
+.cache-info .form-widget label  {
+    font-size: 13px;
+    width: 90px;
+    text-align: right;
+}
+
+.job-info .form-widget input, 
+.job-info .form-widget select,
+.plan-info .form-widget input, 
+.plan-info .form-widget select,
+.log-info .form-widget input, 
+.log-info .form-widget select,
+.cache-info .form-widget input, 
+.cache-info .form-widget select{
+    font-size: 13px;
+    min-height:20px\9 !important;
+}
+
+.job-info .form-widget input.uneditable-input,
+.plan-info .form-widget input.uneditable-input,
+.log-info .form-widget input.uneditable-input {
+    border:0;
+    background:#eaeaea;
+    color:#222;
+}
+
+.job-info .form-actions,
+.plan-info .form-actions,
+.log-info .form-actions{
+    background:transparent;
+    border:0;
+    padding:0;
+    margin:0;
+}
+
+.server-info {
+	padding-left:10px;
+}
+
+.server-info .control-group {
+	margin:15px 0px;
+}
+
+.server-info .control-label {
+	width:120px;
+	text-align:right;
+	font-size:13px;
+}
+
+.server-info .qbi-label,
+.server-info .qmi-label {
+	margin:0px 40px 0px 10px;
+	font-size:13px;
+	display:inline \9;
+	zoom:1;
+}
+
+.server-info .qmi-label img,
+.server-info .qbi-label img{
+	margin-left:30px;
+	vertical-align:middle;
+	display:inline;
+}
+
+.server-info .control-group button {
+	margin:0px 0px 0px 60px;
+	width:80px;
+}
+
+.cache-info h2 span {
+	font-weight:normal;
+	cursor:pointer;
+}
+
+.cache-info a.btn {
+	color:#fff;
+	margin-left:20px;
+}
+
+.cache-info table {
+	font-size:13px;
+}
+
+.cache-info table tr td {
+	padding: 5px;
+	text-align:center;
+	max-width:500px;
+	word-wrap: break-word;
+}
+.cache-info table tr th{
+	padding: 5px;
+	text-align:center;
+}
+
+.cache-info table tr td:first-child {
+	text-align:left;
+}

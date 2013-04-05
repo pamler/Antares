@@ -1,0 +1,129 @@
+.dsp-config {
+	padding-left:20px;
+	
+	.table-container {
+		border:1px solid #ccc;
+		width:800px;
+		border-radius:3px;
+		margin-top: 40px; 
+		margin-bottom: 20px ;
+		box-shadow: 0 0 10px rgba(189, 189, 189, 0.4);
+		-webkit-box-shadow: 0 0 10px rgba(189, 189, 189, 0.4);
+		-moz-box-shadow: 0 0 10px rgba(189, 189, 189, 0.4);
+		
+		header {
+			padding-top:10px;
+			height:30px;
+			border-radius:3px 3px 0 0;
+			background:#3d3d3d url('../img/headerbox.png') repeat-x;
+			border-top:1px solid #444;	    
+			
+			h3 {
+				font-size:15px;
+				width:200px;
+				float:left;
+				color:#fff;
+				padding-left:10px;
+				font-family:'微软雅黑';
+				font-weight:bold;
+				line-height:25px;
+				margin:0px;
+			}
+			
+			.tool {
+				width:25px;
+				height:25px;
+				display:block;
+				cursor:pointer;
+				margin-right:20px;
+				background:transparent url('../img/gear.png') no-repeat;
+			}
+			
+			.tool:hover {
+				background-position:0px -26px;
+			}
+			
+			.dropdown .triangle {
+				position:absolute;
+				display:none;
+				top:0px;
+				z-index:1001;
+				left:25px;
+				border-top:8px solid transparent;
+				border-bottom:8px solid transparent;
+				border-left:8px solid transparent;
+				border-right:8px solid #fff;
+			}
+			
+			.dropdown.open .triangle {
+				display:block;
+			}
+			
+			.dropdown-menu {
+				top: -10px;
+				left: 40px;
+				min-width: 120px;
+			}
+			
+			.dropdown-menu li a{
+				font-family:'微软雅黑';
+				font-size:14px;
+				width:80px;
+			}
+			
+			.dropdown-menu li a i{
+				margin-top:3px;
+				display:none;
+				margin-left:10px;
+			}
+			
+			.dropdown-menu li.checked a i{
+				display:inline-block;
+			}
+		}
+		
+		footer {
+			background:transparent url('../img/tableheader-bg.png') repeat-x;
+			
+			.btn {
+				margin:10px 20px;
+			}
+			
+			.submit {
+				color:#fff;
+			}
+		}
+		
+		.table{
+			margin-bottom:0px;
+			thead tr {
+				background:transparent url('../img/tableheader-bg.png') repeat-x;
+				font-size:12px;
+				color:#444;
+				border-top:1px solid #ccc;
+				th {
+					text-align:center;
+				}
+				
+				th:last-child {
+					border-left:1px solid #ccc;
+				}				
+			}
+			
+			tbody td {
+				text-align:center;
+				font-size:14px;
+				font-family:'微软雅黑';
+			}
+			
+			tbody td:last-child {
+				border-left:1px solid #ccc;
+				border-bottom:1px solid #ccc;
+			}
+			
+			tbody tr:last-child {
+				border-bottom:1px solid #ccc;
+			}
+		}
+	}
+}

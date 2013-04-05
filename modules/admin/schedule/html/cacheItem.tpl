@@ -1,0 +1,22 @@
+<table>
+	<tr>
+		<th>cacheName</th>
+		<th>countInDisk</th>
+		<th>countInMem</th>
+		<th>hitCount</th>
+		<th>missCount</th>
+		<th>putCount</th>
+		<th>sizeInMem</th>
+	<tr>
+	{@each data as lt}
+	<tr>
+		<td>@{lt.cacheName}</td>
+		<td>@{lt.countInDisk}</td>
+		<td>@{lt.countInMem}</td>
+		<td>@{lt.hitCount}</td>
+		<td>@{lt.missCount}</td>
+		<td>@{lt.putCount}</td>
+		<td>@{lt.sizeInMem}</td>
+	</tr>
+	{@/each}
+ </table>

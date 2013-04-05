@@ -1,0 +1,54 @@
+{
+	"data":[{
+		 "instName": "工商银行",
+		 "instCode":"0801020000"
+	},{
+		 "instName": "农业银行",
+		 "instCode":"0801030000"
+	},{
+		 "instName": "中国银行",
+		 "instCode":"0801040000"
+	},{
+		 "instName": "建设银行",
+		 "instCode":"0801050000"
+	},{
+		 "instName": "交通银行",
+		 "instCode":"0803010000"
+	},{
+		 "instName": "邮政储汇",
+		 "instCode":"0801000000"
+	},{
+		 "instName": "中信银行",
+		 "instCode":"0803020000"
+	},{
+		 "instName": "光大银行",
+		 "instCode":"0803030000"
+	},{
+		 "instName": "华夏银行",
+		 "instCode":"0803040000"
+	},{
+		 "instName": "民生银行",
+		 "instCode":"0803050000"
+	},{
+		 "instName": "广发银行",
+		 "instCode":"0803060000"
+	},{
+		 "instName": "招商银行",
+		 "instCode":"0803080000"
+	},{
+		 "instName": "兴业银行",
+		 "instCode":"0803090000"
+	},{
+		 "instName": "浦发银行",
+		 "instCode":"0803100000"
+	 },{
+		 "instName": "上海银行",
+		 "instCode":"0804012900"
+	 },{
+		 "instName": "北京银行",
+		 "instCode":"0804031000"
+	},{
+		 "instName": "平安银行",
+		 "instCode":"0805450000 "
+	}]
+}

@@ -1,0 +1,102 @@
+{
+    "success": true,
+    "responseData": [
+        {
+            "tabNm": "跨行概览",
+            "tabId": "kuahangyewu",
+            "tabTC":false
+        },
+        {
+            "tabNm": "卡品牌",
+            "tabId": "kapinpai",
+            "tabTC":false
+        },
+        {
+            "tabNm": "受理地",
+            "tabId": "shoulidi",
+            "tabTC":false
+        },
+        {
+            "tabNm": "渠道",
+            "tabId": "qudao",
+            "tabTC":false,
+            "tabOptions": [{
+            	"options":[
+                    {
+                        "optionNm": "总体",
+                        "optionType": "qudao",
+                        "optionValue":"g"
+                    },
+                    {
+                        "optionNm": "ATM",
+                        "optionType": "qudao",
+                        "optionValue":"a"
+                    },
+                    {
+                        "optionNm": "POS",
+                        "optionType": "qudao",
+                        "optionValue":"p"
+                    }
+                ]
+            }]
+        },
+        {
+            "tabNm": "商户结构",
+            "tabId": "shanghujiegou",
+            "tabTC": true
+        },
+        {
+            "tabNm": "交易质量",
+            "tabId": "jiaoyizhiliang",
+            "tabTC":false,
+            "tabOptions": [{
+                "options":[
+                    {
+                        "optionNm": "卡均金额趋势",
+                        "optionType": "jiaoyizhiliang",
+                        "optionValue":"kj"
+                    },
+                    {
+                        "optionNm": "笔均金额趋势",
+                        "optionType": "jiaoyizhiliang",
+                        "optionValue":"bj"
+                    }
+                ]
+            }]
+        },
+        {
+            "tabNm": "高端卡",
+            "tabId": "gaoduanka",
+            "tabTC": true
+        },
+        {
+            "tabNm": "公务卡",
+            "tabId": "gongwuka",
+            "tabTC": true
+        },
+        {
+            "tabNm": "IC卡",
+            "tabId": "icka",
+            "tabTC": true,
+            "tabOptions": [{
+                "options":[
+                    {
+                        "optionNm": "商户结构",
+                        "optionType": "icka",
+                        "optionValue":"mchnt"
+                    },
+                    {
+                        "optionNm": "接触/非接触",
+                        "optionType": "icka",
+                        "optionValue":"touch"
+                    },
+                    {
+                        "optionNm": "借贷记/电子现金",
+                        "optionType": "icka",
+                        "optionValue":"ap"
+                    }
+                ]
+            }]
+        }
+    ]
+}

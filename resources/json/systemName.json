@@ -1,0 +1,22 @@
+{"success":true,
+	"responseData":[{
+		 "systemID": "K",
+		 "systemName":"重点指标展示平台"
+	 },
+	  {
+		 "systemID": "S",
+		 "systemName":"统一调度平台"
+	 },	
+	   {
+		 "systemID": "D",
+		 "systemName":"机构数据大厅"
+	 },	
+	   {
+		 "systemID": "B",
+		 "systemName":"经营指标平台"
+	 },	
+	   {
+		 "systemID": "U",
+		 "systemName":"统一数据平台"
+	 }]
+ }
