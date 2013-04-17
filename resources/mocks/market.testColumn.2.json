@@ -1,0 +1,13 @@
+[{
+	"date":"2012.01","instValue":8,"instId":"0800012900", "avgValue":8
+},{
+	"date":"2012.02","instValue":30,"instId":"0800012900", "avgValue":28.5
+},{
+	"date":"2012.03","instValue":27,"instId":"0800012900", "avgValue":30
+},{
+	"date":"2012.04","instValue":25,"instId":"0800012900", "avgValue":29
+},{
+	"date":"2012.05","instValue":54,"instId":"0800012900", "avgValue":50
+},{
+	"date":"2012.06","instValue":59,"instId":"0800012900", "avgValue":55
+}]

@@ -6,12 +6,9 @@ define(function(require, exports, module) {
 		homeView;
 	
 	return function(options) {
-		var dom = $(options.element);
-		
 		if(!homeView){
-			homeView = new MainView({
-		        el: dom
-		    });
+			homeView = new MainView;
+			$(options.element).append(homeView.el);
 		}
 	}
 });

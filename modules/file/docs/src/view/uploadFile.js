@@ -245,7 +245,7 @@ define(function(require, exports, module) {
 	    		this.$el.find('.persons-detail').slideDown();
 	    		this.$el.find('.persons-to-upload span').html('');
 	    	} else {
-	    		this.$el.find('.persons-detail').slideUp();
+	    		this.$el.find('.persons-detail').hide();
 	    		this.$el.find('.persons-to-upload .tag-list').html('');
 	    		this.$el.find('.persons-to-upload span').html('所有人可见');
 	    	}

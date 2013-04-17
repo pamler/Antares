@@ -44,9 +44,9 @@ define(function(require, exports, module) {
 			}	
 		};
 		// 新建或打开已有的tab页
-		tab.createNewSheet(url.replace(/\./g, '-'), perms.getTitle(url));
+		tab.createNewSheet(url.replace(/\./g, '-'), perms.getTitle(url) || '默认页面');
 		setTimeout(function(){
 			core.start(moduleObj);
-		}, 300);
+		}, 400);
 	}
 });

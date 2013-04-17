@@ -21,7 +21,7 @@ define(function(require, exports, module) {
 	        	  	  route;
 	        	  
 	        	  // 判断权限,访问的链接是否是菜单中拥有的
-	        	  if($.inArray(args, perm.getRule()) != -1){
+	        	  if(!seajs.config.data.auth_strict || $.inArray(args, perm.getRule()) != -1){
 	        		  args = args.substr(2).split('/');   // split by slashes
 			          event = slice.call(args,0);
 			          

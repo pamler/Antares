@@ -314,7 +314,11 @@ define(function(require, exports, module) {
 	        	art.artDialog({
 				    content: this.detailGrid.el,
 				    padding: '5px',
-				    opacity:'0.2'
+				    opacity:'0.2',
+				    close: function () {
+				        this.hide();
+				        return false;
+				    }
 				}).lock();
 	        	
         	} else if(this.pageIndex == 2){

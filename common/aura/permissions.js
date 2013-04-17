@@ -13,8 +13,7 @@ define(function(require, exports, module) {
 	"use strict";
 
     var permissions = {};
-    var rules = [];
-    var nName = {};
+    var rules = [], nName = {}, appList = [];
 //    permissions.extend = function(extended) {
 //        rules = $.extend(true, {}, rules, extended);
 //    };
@@ -30,6 +29,14 @@ define(function(require, exports, module) {
     
     permissions.getTitle = function(name){
     	return nName[name];
+    };
+    
+    permissions.addApp = function(id){
+    	appList.push(id);
+    };
+    
+    permissions.getApp = function(){
+    	return appList;
     };
 
     // * **param:** {string} subscriber Module name

@@ -26,7 +26,7 @@ seajs.config({
 		
 	},
 	
-	plugins: ['nocache','shim','text'],
+	plugins: ['nocache','shim','text','style'],
 	
 	preload: [
 	    Function.prototype.bind ? '' : 'es5-safe',
@@ -35,6 +35,8 @@ seajs.config({
 	
 	charset: 'utf-8',
 	
+	auth_strict: false, // 是否前台判权限
+	
 	modules: [		
         {name:'menu', domain:''},
         {name:'kpi.config', domain:''},
@@ -42,6 +44,7 @@ seajs.config({
         {name:'kpi.fbmi', domain:''},
         {name:'kpi.gbmi', domain:''},
         {name:'kpi.config', domain:''},
+        {name:'kpi.market', domain:''},
         {name:'file.docs', domain:''},
         {name:'admin.log', domain:''},
         {name:'admin.schedule', domain:''}

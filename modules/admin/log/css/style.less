@@ -1,0 +1,40 @@
+.gradient (@origin, @start, @stop) {
+    background-image: -webkit-linear-gradient(@origin, @start, @stop);
+    background-image: -moz-linear-gradient(@origin, @start, @stop);
+    background-image: -o-linear-gradient(@origin, @start, @stop);
+    background-image: -ms-linear-gradient(@origin, @start, @stop);
+    background-image: linear-gradient(@origin, @start, @stop);
+}
+
+.admin-log {
+	
+	.box {
+		margin:20px;
+		padding-bottom:20px;
+		border-radius:5px;
+		border:1px solid #ccc;
+		
+		form {
+			padding:20px;
+			padding-bottom:0px;
+			border-bottom:1px solid #ccc;
+			filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffffff', endColorstr='#ffededed', GradientType=0);
+			.gradient(top, #ffffff, #ededed);
+			.control-label {
+				width:100px;
+			}
+			.controls {
+				margin-left:120px;
+			}
+			.form-actions {
+				background-color:transparent;
+				margin-bottom:0px;
+			}
+		}
+		
+		.udp-grid {
+			margin-left:20px;
+		}
+	}
+	
+}

@@ -57,6 +57,8 @@ define(function(require, exports, module) {
 	    addOne: function(accordion) {
 	    	var me = this,
 	    		data = accordion.toJSON();
+	    	
+	    	perm.addApp(data.menuGroupId);
 	    	// 通过iframe的方式登陆NIMP
 	    	if(data.menuGroupId == 2 && data.menuGroupUrl){
 //	    		$('#nimpweb').attr('src',data.protocol+'/nimpweb/gateway/get?appId=A7B20EE1FFA84C740115E645523F743B&targetType=url&targetId=/pages/nimp/dashboard/dashboard.jsf?dashboardid=xykmap');

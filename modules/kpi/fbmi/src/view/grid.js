@@ -64,7 +64,7 @@ define(function(require, exports, module) {
                     }},
                     {name: 'changeInRank',index: 'changeInRank',width: 100,align:'center',formatter:function(v){
                     	return (v==-999999)?'--':v;
-                    }},
+                    }}
                 ],
                 hidegrid: false,
                 viewrecords: true,
