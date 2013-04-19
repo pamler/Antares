@@ -96,15 +96,17 @@ define(function(require, exports, module) {
     			event.preventDefault();
     			var treeId = data.rslt.obj.closest('.tree-navi').attr('id'),
     				href = data.rslt.obj.find('a').attr('href');
-    			if(treeId != me.activeTreeId && me.activeTreeId != ''){
-    				me.$el.find('#' + me.activeTreeId).jstree("deselect_all");
-    			}
-    			if(data.rslt.obj.hasClass('jstree-leaf') !== true){
-    				data.rslt.obj.find('ins').first().click();
-				}
-    			me.activeTreeId = treeId;
-    			if(href != '#'){
-    				location.href = href;
+    			if(location.href.match(/#!(\S*)/g) != href){
+	    			if(treeId != me.activeTreeId && me.activeTreeId != ''){
+	    				me.$el.find('#' + me.activeTreeId).jstree("deselect_all");
+	    			}
+	    			if(data.rslt.obj.hasClass('jstree-leaf') !== true){
+	    				data.rslt.obj.find('ins').first().click();
+					}
+	    			me.activeTreeId = treeId;
+	    			if(href != '#'){
+	    				location.href = href;
+	    			}
     			}
 			});
 	    },

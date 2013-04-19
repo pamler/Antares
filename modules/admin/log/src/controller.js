@@ -6,6 +6,10 @@ define(function(require, exports, module) {
 	
 	var sandbox = require('sandbox.admin.log');
 	
+	if(seajs.config.data.development){
+		require.async('../css/style.css');
+	}
+	
 	var MainView = require('./view/main');
 	var view;
 	

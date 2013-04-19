@@ -7,6 +7,10 @@ define(function(require, exports, module) {
 	var MainView = require('./view/main');
 	var bmiInst = [];
 	
+	if(seajs.config.data.development){
+		require.async(['../css/style.css', '../css/notify.css']);
+	}
+	
 	var branchMap = {
 		"0800012900":"上海分公司",
 		"0800011000":"北京分公司",

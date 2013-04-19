@@ -245,7 +245,7 @@
   padding-left: 10px;
   height: 40px;
   line-height: 40px;
-  background: transparent url('../img/tableheader-bg.png') repeat-x;
+  background: transparent url('/Antares/resources/img/tableheader-bg.png') repeat-x;
   border: 1px solid #d5d5d5;
   -webkit-border-top-left-radius: 4px;
   -webkit-border-top-right-radius: 4px;
@@ -311,12 +311,14 @@
 }
 .row-fluid.file-manage .span20 .header-box {
   padding: 5px 30px 5px;
+  *padding: 0px;
   background: #fff;
   border-bottom: 1px solid #ebebeb;
 }
 .row-fluid.file-manage .span20 .header-box h2 {
   font-size: 28px;
   color: #444;
+  *margin: 15px 0px 10px 30px;
 }
 .row-fluid.file-manage .span20 .header-box h2 a {
   float: right;
@@ -324,12 +326,13 @@
   color: #444;
   display: block;
   margin-top: 15px;
+  *margin-top: -20px;
   width: 100px;
   height: 29px;
   line-height: 29px;
   padding-left: 16px;
   text-decoration: none;
-  background: transparent url('../img/round-btn.png') no-repeat;
+  background: transparent url('/Antares/resources/img/round-btn.png') no-repeat;
 }
 .row-fluid.file-manage .span20 .f-box {
   margin-left: 0px;
@@ -350,7 +353,7 @@
 .row-fluid.file-manage .span20 .f-box .f-lbox .add-btn {
   margin-left: 40%;
   display: block;
-  background: transparent url('../img/add.png') no-repeat;
+  background: transparent url('/Antares/resources/img/add.png') no-repeat;
   background-position: 0px -35px;
   height: 16px;
   width: 18px;
@@ -365,7 +368,9 @@
 .row-fluid.file-manage .span20 .f-box .f-rbox {
   background: #fff;
   min-height: 120px;
+  min-height: 100px \9;
   padding: 10px 20px 20px;
+  *width: 83%;
 }
 .row-fluid.file-manage .span20 .f-box .f-rbox .info {
   font-size: 12px;
@@ -429,7 +434,7 @@
   color: #fff;
   margin: 5px 5px 0px 0px;
   display: inline-block;
-  background: transparent url(../img/tag-bg.png) repeat;
+  background: transparent url(/Antares/resources/img/tag-bg.png) repeat;
 }
 .row-fluid.file-manage .span20 .tag-list .file-item {
   font-size: 12px;
@@ -441,7 +446,7 @@
   color: #fff;
   margin-top: 5px;
   display: block;
-  background: transparent url(../img/tag-bg.png) repeat;
+  background: transparent url(/Antares/resources/img/tag-bg.png) repeat;
 }
 .row-fluid.file-manage .span20 .tag-list i {
   cursor: pointer;
@@ -481,7 +486,7 @@
   color: #fff;
   margin: 3px;
   display: inline-block;
-  background: transparent url(../img/tag-bg.png) repeat;
+  background: transparent url(/Antares/resources/img/tag-bg.png) repeat;
 }
 
 .home-page {
@@ -491,12 +496,13 @@
 }
 .home-page .h-box {
   background: #f5f5f5;
+  padding-bottom: 10px;
   border: 1px solid #ccc;
   border-radius: 10px;
   font-family: '微软雅黑';
 }
 .home-page .h-box h3 {
-  background: url('../img/tableheader-bg.png') repeat-x;
+  background: url('/Antares/resources/img/tableheader-bg.png') repeat-x;
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
   margin: 0px;
@@ -518,6 +524,7 @@
   height: 150px;
   background: #fff;
   margin: 10px;
+  margin-bottom: 0px;
   width: 32%;
   padding: 10px 0px;
   padding-bottom: 0px;
@@ -542,8 +549,7 @@
   cursor: pointer;
   color: #2088cc;
   font-size: 12px;
-  float: right;
-  margin-right: 20px;
+  margin-left: 20px;
 }
 .home-page .board {
   margin-left: 0px;
@@ -610,8 +616,8 @@
   padding-top: 10px;
   height: 30px;
   border-radius: 3px 3px 0 0;
-  background: #3d3d3d url('../img/headerbox.png') repeat-x;
-  border-top: 1px solid #444;
+  background: #3d3d3d url('/Antares/resources/img/headerbox.png') repeat-x;
+  border: 1px solid #444;
 }
 .dsp-config .table-container header h3 {
   font-size: 15px;
@@ -630,7 +636,7 @@
   display: block;
   cursor: pointer;
   margin-right: 20px;
-  background: transparent url('../img/gear.png') no-repeat;
+  background: transparent url('/Antares/resources/img/gear.png') no-repeat;
 }
 .dsp-config .table-container header .tool:hover {
   background-position: 0px -26px;
@@ -639,6 +645,8 @@
   position: absolute;
   display: none;
   top: 0px;
+  *width: 0;
+  *height: 0;
   z-index: 1001;
   left: 25px;
   border-top: 8px solid transparent;
@@ -668,7 +676,7 @@
   display: inline-block;
 }
 .dsp-config .table-container footer {
-  background: transparent url('../img/tableheader-bg.png') repeat-x;
+  background: transparent url('/Antares/resources/img/tableheader-bg.png') repeat-x;
 }
 .dsp-config .table-container footer .btn {
   margin: 10px 20px;
@@ -680,7 +688,7 @@
   margin-bottom: 0px;
 }
 .dsp-config .table-container .table thead tr {
-  background: transparent url('../img/tableheader-bg.png') repeat-x;
+  background: transparent url('/Antares/resources/img/tableheader-bg.png') repeat-x;
   font-size: 12px;
   color: #444;
   border-top: 1px solid #ccc;
@@ -688,7 +696,7 @@
 .dsp-config .table-container .table thead tr th {
   text-align: center;
 }
-.dsp-config .table-container .table thead tr th:last-child {
+.dsp-config .table-container .table thead tr th.last-item {
   border-left: 1px solid #ccc;
 }
 .dsp-config .table-container .table tbody td {
@@ -696,11 +704,11 @@
   font-size: 14px;
   font-family: '微软雅黑';
 }
-.dsp-config .table-container .table tbody td:last-child {
+.dsp-config .table-container .table tbody tr td.last-item {
   border-left: 1px solid #ccc;
   border-bottom: 1px solid #ccc;
 }
-.dsp-config .table-container .table tbody tr:last-child {
+.dsp-config .table-container .table tbody tr.last-item td {
   border-bottom: 1px solid #ccc;
 }
 
@@ -743,11 +751,11 @@
   border: 1px solid #bcd5eb;
   border-radius: 5px;
   height: 40px;
-  background: transparent url(../img/dsp-option-bg.png) repeat-x;
+  background: transparent url(/Antares/resources/img/dsp-option-bg.png) repeat-x;
   position: relative;
 }
 .dsp-page .dsp-optionbar .btn-group > .btn {
-  background: url(../img/switch.gif) repeat-x;
+  background: url(/Antares/resources/img/switch.gif) repeat-x;
   display: block;
   float: left;
   border: 1px solid #bbbbbb;
@@ -795,13 +803,12 @@
   float: left;
 }
 .dsp-page .tabbar .tabbable .tab-bar-options input {
-  margin-top: 0px;
-  margin-bottom: 0px;
-  margin-left: 10px;
-  margin-right: 0px;
+  margin: 0px 0px 0px 10px;
+  *margin: 0px -5px 0px 10px;
 }
 .dsp-page .tabbar .slider {
   margin-top: -2px;
+  margin-left: 0px;
   height: 4px;
   width: 88px;
   background: #155fa1;
@@ -822,6 +829,7 @@
   font-size: 12px;
   color: #666;
   text-align: right;
+  *text-align: center;
 }
 .bmi-tool a {
   cursor: pointer;
@@ -831,7 +839,7 @@
   display: inline-block;
   width: 20px;
   height: 20px;
-  background: transparent url(../img/phone-mail.png) no-repeat;
+  background: transparent url(/Antares/resources/img/phone-mail.png) no-repeat;
 }
 .bmi-phone.no-bind {
   background-position: 0px -35px;
@@ -840,7 +848,7 @@
   display: inline-block;
   width: 20px;
   height: 15px;
-  background: transparent url(../img/phone-mail.png) no-repeat 0px -20px;
+  background: transparent url(/Antares/resources/img/phone-mail.png) no-repeat 0px -20px;
 }
 .bmi-email.no-bind {
   background-position: 0px -55px;
@@ -896,7 +904,7 @@
   padding-left: 20px;
   color: #666;
   margin: 5px 0px;
-  background: transparent url('../img/phone-mail.png') no-repeat;
+  background: transparent url('/Antares/resources/img/phone-mail.png') no-repeat;
 }
 .bmi-notify .phone-email .email {
   font-size: 12px;
@@ -905,7 +913,7 @@
   padding-left: 24px;
   color: #666;
   margin: 5px 0px;
-  background: transparent url('../img/phone-mail.png') no-repeat 0px -20px;
+  background: transparent url('/Antares/resources/img/phone-mail.png') no-repeat 0px -20px;
 }
 .bmi-notify .phone-email .phone-content,
 .bmi-notify .phone-email .email-content {
@@ -960,7 +968,7 @@
   color: #4d4d4d;
   border-right: 1px solid #d7d7d7;
   font-weight: normal;
-  background: #ffffff url(../img/bg-table.png) repeat-x;
+  background: #ffffff url(/Antares/resources/img/bg-table.png) repeat-x;
 }
 .bmi-notify .subscription th.first {
   border-left: 1px solid #d7d7d7;
@@ -1021,7 +1029,7 @@
   width: 80px;
   height: 80px;
   font-family: '微软雅黑';
-  background: transparent url(../img/calendar.png) no-repeat;
+  background: transparent url(/Antares/resources/img/calendar.png) no-repeat;
 }
 .month-panel .month-name {
   margin: 12px 0px 10px 10px;
@@ -1037,7 +1045,7 @@
 }
 .month-panel.disable {
   cursor: default;
-  background: transparent url(../img/calendar.png) no-repeat -80px;
+  background: transparent url(/Antares/resources/img/calendar.png) no-repeat -80px;
 }
 .month-panel.disable .month-rank {
   color: #999;
@@ -1055,6 +1063,7 @@
   -moz-box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.15);
   box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.15);
   padding: 20px 10px 10px 20px;
+  padding-bottom: 7px \9;
   border-bottom-left-radius: 4px;
   border-bottom-right-radius: 4px;
   text-shadow: 1px 1px 2px #fff;
@@ -1088,7 +1097,7 @@
   border: 1px solid #bcd5eb;
   border-radius: 5px;
   height: 42px;
-  background: transparent url(../img/dsp-option-bg.png) repeat;
+  background: transparent url(/Antares/resources/img/dsp-option-bg.png) repeat;
   margin-bottom: -1px;
   position: relative;
 }
@@ -1133,13 +1142,13 @@
   border-right: 1px solid #d6eef2;
   height: 40px;
   position: relative;
-  background: transparent url(../img/bmi-subbar.png) repeat-x;
+  background: transparent url(/Antares/resources/img/bmi-subbar.png) repeat-x;
   margin-bottom: 10px;
   margin-left: 5px;
 }
 .bmi-page .bmi-subOptionBar span {
   font-size: 12px;
-  color: #666;
+  color: #333;
   border-radius: 3px;
   display: inline-block;
   cursor: pointer;
@@ -1164,7 +1173,7 @@
   border-bottom: 1px solid #bbb;
   border-top-left-radius: 5px;
   border-top-right-radius: 5px;
-  background: transparent url(../img/tableheader-bg.png) repeat-x;
+  background: transparent url(/Antares/resources/img/tableheader-bg.png) repeat-x;
   height: 31px;
   font-weight: bold;
   color: #143252;
@@ -1194,7 +1203,7 @@
   width: 100%;
 }
 .bmi-page .bmi-maincontent .subgrid-icon {
-  background: transparent url('../img/group-expand-sprite.gif') no-repeat 0px -50px;
+  background: transparent url('/Antares/resources/img/group-expand-sprite.gif') no-repeat 0px -50px;
   cursor: pointer;
   display: block;
   width: 16px;
@@ -1218,9 +1227,10 @@
 }
 .bmi-page .bmi-maincontent .left-info h3 {
   font-size: 20px;
-  line-height: 20px;
+  display: inline;
+  margin-right: 25px;
+  line-height: 34px;
   margin-top: 0px;
-  margin-bottom: 5px;
 }
 .bmi-page .bmi-maincontent .left-info .view-detail {
   font-size: 12px;
@@ -1230,25 +1240,30 @@
 }
 .bmi-page .bmi-maincontent .left-info .belong-type {
   font-size: 12px;
-  margin-bottom: 0px;
+  color: #333;
+  vertical-align: bottom;
 }
 .bmi-page .bmi-maincontent .left-info table {
   margin-top: 10px;
+}
+.bmi-page .bmi-maincontent .left-info table img {
+  vertical-align: baseline;
 }
 .bmi-page .bmi-maincontent .left-info table tr td {
   border: 0;
   border-bottom: 1px dotted #ccc;
 }
-.bmi-page .bmi-maincontent .left-info table tr td:first-child {
+.bmi-page .bmi-maincontent .left-info table tr td.first-item {
   font-weight: bold;
   padding-left: 0px;
   font-size: 20px;
   color: #333;
-  width: 30%;
+  width: 40%;
 }
-.bmi-page .bmi-maincontent .left-info table tr td:last-child {
+.bmi-page .bmi-maincontent .left-info table tr td.last-item {
   font-size: 12px;
   color: #666;
+  vertical-align: baseline;
 }
 .bmi-page .bmi-maincontent .chart .chart-loader {
   position: relative;
@@ -1259,7 +1274,7 @@
 .bmi-page .bmi-maincontent .chart .chart-svg {
   padding: 5px;
   border: 2px solid #545454;
-  background: transparent url('../img/grid-bg.png') repeat;
+  background: transparent url('/Antares/resources/img/grid-bg.png') repeat;
   height: 195px;
 }
 .bmi-page .bmi-maincontent .gadget-container {
@@ -1279,7 +1294,7 @@
   font-family: '微软雅黑';
 }
 .bmi-page .bmi-maincontent .gadget-container .gadget {
-  background: transparent url(../img/gadget-bg.png) no-repeat;
+  background: transparent url(/Antares/resources/img/gadget-bg.png) no-repeat;
   height: 110px;
   margin-top: 10px;
   margin-left: 15px;
@@ -1292,6 +1307,7 @@
   float: left;
   font-weight: bold;
   padding: 10px 0px 0px 15px;
+  *padding-top: 20px;
 }
 .bmi-page .bmi-maincontent .gadget-container .gadget .info .type {
   font-size: 18px;
@@ -1310,7 +1326,7 @@
   margin-top: 10px;
   width: 50px;
   height: 50px;
-  background: transparent url(../img/gadget-rank.png) no-repeat;
+  background: transparent url(/Antares/resources/img/gadget-rank.png) no-repeat;
 }
 .bmi-page .bmi-maincontent .gadget-container .gadget .rank p {
   margin-top: 15px;
@@ -1352,7 +1368,7 @@
 .gbmi .gbmi-header {
   padding-left: 10px;
   padding-top: 10px;
-  background: #3d3d3d url('../img/headerbox.png') repeat-x;
+  background: #3d3d3d url('/Antares/resources/img/headerbox.png') repeat-x;
   border-top: 1px solid #444;
 }
 .gbmi .gbmi-header h4 {
@@ -1495,18 +1511,18 @@
   -webkit-box-shadow: 0 0 10px rgba(189, 189, 189, 0.4);
   -moz-box-shadow: 0 0 10px rgba(189, 189, 189, 0.4);
   margin: 20px;
+  font-family: '微软雅黑';
 }
 .market-page .detail-page .widget-header {
   padding-left: 10px;
   height: 40px;
   line-height: 40px;
-  background: transparent url('../img/tableheader-bg.png') repeat-x;
+  background: transparent url('/Antares/resources/img/tableheader-bg.png') repeat-x;
   border: 1px solid #d5d5d5;
   border-top-left-radius: 4px;
   border-top-right-radius: 4px;
 }
 .market-page .detail-page .widget-header h3 {
-  font-family: '微软雅黑';
   font-size: 14px;
   float: left;
   font-weight: bold;
@@ -1552,7 +1568,7 @@
   margin: 0px 5px 0px 10px;
 }
 .market-page .detail-page .widget-content legend {
-  font-size: 14px;
+  font-size: 12px;
   margin-bottom: 8px;
   border: 0px;
   width: auto;
@@ -1579,19 +1595,19 @@
   padding: 4px;
 }
 .market-page .detail-page .widget-content .mchnt-input label {
-  font-size: 14px;
+  font-size: 12px;
   margin: 5px 0px;
 }
 .market-page .detail-page .widget-content .mchnt-input textarea {
   width: 90%;
-  font-size: 14px;
+  font-size: 12px;
 }
 
 .market-page .main-page {
   padding: 20px;
+  font-family: '微软雅黑';
 }
 .market-page .main-page h3 {
-  font-family: '微软雅黑';
   font-size: 18px;
   border-bottom: 1px solid #ccc;
 }
@@ -1605,6 +1621,7 @@
 }
 .market-page .main-page .download .reports .report-item {
   font-size: 13px;
+  font-weight: bold;
   margin-bottom: 20px;
   width: 80%;
   display: block;
@@ -1615,7 +1632,7 @@
   display: block;
   float: right;
   margin-right: 10px;
-  background: transparent url('../img/down-btn.png') no-repeat;
+  background: transparent url('/Antares/resources/img/down-btn.png') no-repeat;
   width: 20px;
   height: 20px;
   cursor: pointer;
@@ -1648,15 +1665,17 @@
 
 .mchntpop {
   width: 500px;
-  height: 470px;
+  height: 480px;
   font-size: 13px;
+  font-family: '微软雅黑';
 }
 .mchntpop .mchnt-title {
   padding: 10px;
   background: #f5f5f5;
+  font-weight: bold;
 }
 .mchntpop .mchnt-title .control {
-  margin: 0px 10px;
+  margin-right: 40px;
   float: left;
 }
 .mchntpop .mchnt-title .control input {
@@ -1686,7 +1705,7 @@
 
 .row-fluid .left-view {
   border-right: 1px solid #bbb;
-  background: transparent url('../img/bg-tree.png') repeat;
+  background: transparent url('/Antares/resources/img/bg-tree.png') repeat;
   display: none;
   left: -210px;
   position: relative;
@@ -1697,12 +1716,14 @@
 }
 .row-fluid .left-view .left-menu h3 {
   font-size: 13px;
+  border-radius: 4px;
   padding: 5px 9px 5px 7px;
   background-image: -webkit-linear-gradient(top, #ffffff, #eeeeee);
   background-image: -moz-linear-gradient(top, #ffffff, #eeeeee);
   background-image: -o-linear-gradient(top, #ffffff, #eeeeee);
   background-image: -ms-linear-gradient(top, #ffffff, #eeeeee);
   background-image: linear-gradient(top, #ffffff, #eeeeee);
+  filter: progid:dximagetransform.microsoft.gradient(startColorstr='#ffffffff', endColorstr='#ffeeeeee', GradientType=0);
   text-shadow: 0 -1px 0 rgba(255, 255, 255, 0.25);
   color: #444;
   border: 1px solid #bbb;
@@ -1711,7 +1732,7 @@
   padding-left: 50px;
   height: 27px;
   line-height: 27px;
-  background: transparent url('../img/accordion-icon.png') no-repeat;
+  background: transparent url('/Antares/resources/img/accordion-icon.png') no-repeat;
 }
 .row-fluid .left-view .left-menu h3 .accordion-chart {
   background-position: 0px -30px;
@@ -1727,12 +1748,13 @@
 }
 .row-fluid .left-view .left-menu h3.ui-state-active {
   color: #fff;
-  background-color: #4e9ea8;
+  background: #4e9ea8;
   background-image: -webkit-linear-gradient(top, #5facb6, #47959f);
   background-image: -moz-linear-gradient(top, #5facb6, #47959f);
   background-image: -o-linear-gradient(top, #5facb6, #47959f);
   background-image: -ms-linear-gradient(top, #5facb6, #47959f);
   background-image: linear-gradient(top, #5facb6, #47959f);
+  filter: progid:dximagetransform.microsoft.gradient(startColorstr='#ff5facb6', endColorstr='#ff47959f', GradientType=0);
   text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
   border-color: #397780;
 }
@@ -1743,5 +1765,6 @@
   padding-top: 5px;
 }
 .row-fluid .left-view .left-menu .jstree a {
-  margin-top: 5px !important;
+  margin-top: 5px;
+  *margin-top: 6px !important;
 }

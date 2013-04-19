@@ -15,6 +15,10 @@ define(function(require, exports, module) {
 		ServerInfoView = require('./view/serverInfoView'),
 		CacheInfoView = require('./view/cacheInfoView');
 	
+	if(seajs.config.data.development){
+		require.async('../css/style.css');
+	}
+	
 	var viewObj = {};
 	
 	return function(options) {

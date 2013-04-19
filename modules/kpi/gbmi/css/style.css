@@ -1,0 +1,160 @@
+.gbmi {
+  margin-top: 20px;
+  margin-left: 20px;
+  border: 1px solid #999;
+  border-radius: 4px;
+  width: 97%;
+}
+.gbmi select {
+  width: 100px;
+  margin: 10px;
+  height: 27px;
+  font-size: 12px;
+}
+.gbmi a.gbmi-download {
+  margin: 10px;
+  color: blue;
+  font-size: 12px;
+  border-right: 1px solid blue;
+  padding-right: 20px;
+}
+.gbmi .gbmi-header {
+  padding-left: 10px;
+  padding-top: 10px;
+  background: #3d3d3d url('/Antares/resources/img/headerbox.png') repeat-x;
+  border-top: 1px solid #444;
+}
+.gbmi .gbmi-header h4 {
+  color: #fff;
+  float: left;
+  margin: 0px;
+}
+.gbmi .gbmi-header ul {
+  margin-bottom: 0px;
+  float: right;
+  margin-right: 20px;
+}
+.gbmi .gbmi-header ul li a {
+  font-size: 12px;
+  padding: 4px 12px;
+  color: #fff;
+}
+.gbmi .gbmi-header ul li.active a,
+.gbmi .gbmi-header ul li a:hover {
+  color: #555;
+}
+.gbmi .tab-content {
+  margin-left: 0px;
+  min-height: 600px;
+  overflow: hidden;
+}
+.gbmi .tab-content .tab-pane .control-pane {
+  background-image: -webkit-linear-gradient(top, #ffffff, #ededed);
+  background-image: -moz-linear-gradient(top, #ffffff, #ededed);
+  background-image: -o-linear-gradient(top, #ffffff, #ededed);
+  background-image: -ms-linear-gradient(top, #ffffff, #ededed);
+  background-image: linear-gradient(top, #ffffff, #ededed);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffffff', endColorstr='#ffededed', GradientType=0);
+  border-bottom: 1px solid #ccc;
+  padding-top: 10px;
+  padding-left: 15px;
+}
+.gbmi .gbmi-tableCt {
+  background: transparent;
+  width: 98%;
+  margin: 15px;
+  border-left: 1px solid #ccc;
+  border-radius: 5px;
+  overflow: auto;
+}
+.gbmi .gbmi-table {
+  margin: 0;
+}
+.gbmi .gbmi-table thead tr {
+  background: -webkit-linear-gradient(top, #eeeeee 0%, #dadada 100%);
+}
+.gbmi .gbmi-table thead th {
+  color: #444;
+  border-top: 0;
+  border-left: 1px solid #f1f1f1;
+  border-right: 1px solid #ccc;
+  font-size: 13px;
+  font-weight: bold;
+  text-align: center;
+  vertical-align: middle;
+}
+.gbmi .gbmi-table tr td {
+  font-size: 13px;
+  text-align: center;
+}
+.gbmi .gbmi-table tr td.sum {
+  background: #d9edf7;
+}
+.gbmi .gbmi-table tr td .trend {
+  display: inline-block;
+  width: 40px;
+  text-align: left;
+  *display: inline;
+  *zoom: 1;
+}
+.gbmi .gbmi-table tr td .trend img {
+  vertical-align: baseline;
+  margin-right: 5px;
+}
+.gbmi .frozen-table-ct .table-body {
+  height: 500px;
+  overflow: hidden;
+}
+.gbmi .frozen-table-ct tbody tr td,
+.gbmi .scroll-table-ct tbody tr td {
+  border-right: 1px solid #ccc;
+}
+.gbmi .frozen-table-ct .table-body tbody tr td:first-child {
+  background: #f1f1f1;
+}
+.gbmi .frozen-table-ct .table-header {
+  border-top: 1px solid #ccc;
+}
+.gbmi .scroll-table-ct .table-header {
+  padding-right: 17px;
+}
+.gbmi .frozen-table-ct .table-body,
+.gbmi .scroll-table-ct .table-body {
+  border-bottom: 1px solid #ccc;
+}
+.gbmi .frozen-table-ct .table-header .gbmi-table tbody tr,
+.gbmi .scroll-table-ct .table-header .gbmi-table tbody tr {
+  background: #f1f1f1;
+}
+.gbmi .frozen-table-ct .table-body .gbmi-table,
+.gbmi .scroll-table-ct .table-body .gbmi-table {
+  border-top: 0;
+}
+.gbmi .row-fluid .scroll-table-ct {
+  float: left;
+  border-left: 1px solid #fff;
+  border-top: 1px solid #ccc;
+  border-right: 1px solid #ccc;
+  border-radius: 5px;
+  overflow: hidden;
+  margin-left: 0px;
+}
+.gbmi .scroll-table-ct .scroll-body-control {
+  margin-left: 0px;
+  overflow: auto;
+  height: 500px;
+}
+.gbmi .scroll-table-ct .table-body {
+  background: #fdfdfd;
+  overflow: auto;
+}
+.gbmi .scroll-table-ct .table-header th {
+  min-width: 199px;
+}
+.gbmi .scroll-table-ct .table-header tbody tr td:first-child,
+.gbmi .scroll-table-ct .table-body tbody tr td:first-child {
+  border-left: 0;
+}
+.gbmi .row-fluid .frozen-table-ct {
+  border-right: 2px solid #bbb;
+}

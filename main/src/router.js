@@ -11,15 +11,15 @@ define(function(require, exports, module) {
 	      },
 	      routes: {
 	    	  '': 'index',
-	    	  '*router': 'router',
+	    	  '*router': 'router'
 	      },
 	      
 	      router: function(args) {
 	    	  // 匹配以 !/ 开始的链接
 	          if(args.match(/^\!\/.*/)){
 	        	  var slice = Array.prototype.slice,
+	        	  	  event,
 	        	  	  route;
-	        	  
 	        	  // 判断权限,访问的链接是否是菜单中拥有的
 	        	  if(!seajs.config.data.auth_strict || $.inArray(args, perm.getRule()) != -1){
 	        		  args = args.substr(2).split('/');   // split by slashes

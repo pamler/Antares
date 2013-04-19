@@ -40,8 +40,10 @@ define(function(require, exports, module) {
 	    render: function(){
 	    	var me = this;
 	    	me.$el.html(configDspTpl);
-	    	
 	    	me.$el.find('.dropdown-toggle').dropdown();
+	    	
+	    	me.$el.find('.table thead tr th:last-child').addClass('last-item');
+	    	me.$el.find('.table tbody tr:last-child,.table tbody tr td:last-child').addClass('last-item');
 	    	
 	    	//总体checkbox隐藏
 	    	$.ajax({
@@ -74,6 +76,7 @@ define(function(require, exports, module) {
 			    			}
 			    			
 			    			// 应用加载完毕
+			    			
 			    			sandbox.emit('initialized');
 			    		}
 			    	});

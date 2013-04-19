@@ -8,7 +8,7 @@
 
 .row-fluid .left-view {
 	border-right:1px solid #bbb;
-	background:transparent url('../img/bg-tree.png') repeat;
+	background:transparent url('/Antares/resources/img/bg-tree.png') repeat;
 	display:none;
 	left:-210px;
 	position:relative;
@@ -18,17 +18,18 @@
 		margin-top:10px;
 		h3 {
 			font-size:13px;
+			border-radius:4px;
 			padding:5px 9px 5px 7px;
 			.gradient(top, #ffffff, #eeeeee);
+			filter:progid:dximagetransform.microsoft.gradient(startColorstr='#ffffffff', endColorstr='#ffeeeeee', GradientType=0);
 			text-shadow: 0 -1px 0 rgba(255, 255, 255, 0.25);
 			color:#444;
 			border: 1px solid #bbb;
-			
 			.icon {
 				padding-left:50px;
 				height:27px;
 				line-height:27px;
-				background:transparent url('../img/accordion-icon.png') no-repeat;
+				background:transparent url('/Antares/resources/img/accordion-icon.png') no-repeat;
 			}
 			.accordion-chart {
 				background-position:0px -30px;
@@ -45,8 +46,9 @@
 		}
 		h3.ui-state-active {
 			color:#fff;
-			background-color:#4e9ea8;
+			background:#4e9ea8;
 			.gradient(top, #5facb6, #47959f);
+			filter:progid:dximagetransform.microsoft.gradient(startColorstr='#ff5facb6', endColorstr='#ff47959f', GradientType=0);
 			text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
 			border-color: #397780;
 		}
@@ -57,7 +59,8 @@
 			padding-top:5px;
 		}
 		.jstree a {
-			margin-top: 5px !important;
+			margin-top: 5px;
+			*margin-top: 6px !important;
 		}
 	}
 }

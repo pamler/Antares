@@ -11,7 +11,8 @@ define(function(require, exports, module) {
         
         redrawBarChart: function(data){
         	if(data.length){
-	        	this.drawBarChart(data);
+        		this.$el.html('');
+        		this.drawBarChart(data);
         	}
         },
         

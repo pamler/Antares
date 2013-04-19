@@ -1,17 +1,17 @@
 <h3>@{ruleNm}</h3>
+{@if ruleId != 0}
+	<span class="belong-type"></span>
+{@/if}
 <div>
-	{@if ruleId != 0}
-		<p class="belong-type"></p>
-	{@/if}
 	<a class="view-detail"></a>
 </div>
 <table class="table">
 	<tr>
-		<td>@{scoreValRank}</td>
-		<td>排名</td>
+		<td class="first-item">@{scoreValRank}</td>
+		<td class="last-item">排名</td>
 	</tr>
 	<tr>
-		<td>
+		<td class="first-item">
 			{@if changeInRank > 0}
 				@{changeInRank} <img src="resources/img/rank-up.png">
 			{@else if changeInRank == 0}
@@ -22,20 +22,20 @@
 				无
 			{@/if}
 		</td>
-		<td>较上月排名</td>
+		<td class="last-item">较上月排名</td>
 	</tr>
 	<tr>
 		{@if ruleId == 0}
-			<td>@{scoreVal}</td>
+			<td class="first-item">@{scoreVal}</td>
 		{@else}
-			<td>@{totalPercent}</td>
+			<td class="first-item">@{totalPercent}</td>
 		{@/if}
-		<td>本月得分</td>
+		<td class="last-item">本月得分</td>
 	</tr>
 	{@if ruleId != 0}
 		<tr>
-			<td>@{weight}</td>
-			<td>指标权重</td>
+			<td class="first-item">@{weight}</td>
+			<td class="last-item">指标权重</td>
 		</tr>
 	{@/if}
 </table>

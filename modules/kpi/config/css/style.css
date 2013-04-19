@@ -1,0 +1,112 @@
+.dsp-config {
+  padding-left: 20px;
+}
+.dsp-config .table-container {
+  border: 1px solid #ccc;
+  width: 800px;
+  border-radius: 3px;
+  margin-top: 40px;
+  margin-bottom: 20px ;
+  box-shadow: 0 0 10px rgba(189, 189, 189, 0.4);
+  -webkit-box-shadow: 0 0 10px rgba(189, 189, 189, 0.4);
+  -moz-box-shadow: 0 0 10px rgba(189, 189, 189, 0.4);
+}
+.dsp-config .table-container header {
+  padding-top: 10px;
+  height: 30px;
+  border-radius: 3px 3px 0 0;
+  background: #3d3d3d url('/Antares/resources/img/headerbox.png') repeat-x;
+  border: 1px solid #444;
+}
+.dsp-config .table-container header h3 {
+  font-size: 15px;
+  width: 200px;
+  float: left;
+  color: #fff;
+  padding-left: 10px;
+  font-family: '微软雅黑';
+  font-weight: bold;
+  line-height: 25px;
+  margin: 0px;
+}
+.dsp-config .table-container header .tool {
+  width: 25px;
+  height: 25px;
+  display: block;
+  cursor: pointer;
+  margin-right: 20px;
+  background: transparent url('/Antares/resources/img/gear.png') no-repeat;
+}
+.dsp-config .table-container header .tool:hover {
+  background-position: 0px -26px;
+}
+.dsp-config .table-container header .dropdown .triangle {
+  position: absolute;
+  display: none;
+  top: 0px;
+  *width: 0;
+  *height: 0;
+  z-index: 1001;
+  left: 25px;
+  border-top: 8px solid transparent;
+  border-bottom: 8px solid transparent;
+  border-left: 8px solid transparent;
+  border-right: 8px solid #fff;
+}
+.dsp-config .table-container header .dropdown.open .triangle {
+  display: block;
+}
+.dsp-config .table-container header .dropdown-menu {
+  top: -10px;
+  left: 40px;
+  min-width: 120px;
+}
+.dsp-config .table-container header .dropdown-menu li a {
+  font-family: '微软雅黑';
+  font-size: 14px;
+  width: 80px;
+}
+.dsp-config .table-container header .dropdown-menu li a i {
+  margin-top: 3px;
+  display: none;
+  margin-left: 10px;
+}
+.dsp-config .table-container header .dropdown-menu li.checked a i {
+  display: inline-block;
+}
+.dsp-config .table-container footer {
+  background: transparent url('/Antares/resources/img/tableheader-bg.png') repeat-x;
+}
+.dsp-config .table-container footer .btn {
+  margin: 10px 20px;
+}
+.dsp-config .table-container footer .submit {
+  color: #fff;
+}
+.dsp-config .table-container .table {
+  margin-bottom: 0px;
+}
+.dsp-config .table-container .table thead tr {
+  background: transparent url('/Antares/resources/img/tableheader-bg.png') repeat-x;
+  font-size: 12px;
+  color: #444;
+  border-top: 1px solid #ccc;
+}
+.dsp-config .table-container .table thead tr th {
+  text-align: center;
+}
+.dsp-config .table-container .table thead tr th.last-item {
+  border-left: 1px solid #ccc;
+}
+.dsp-config .table-container .table tbody td {
+  text-align: center;
+  font-size: 14px;
+  font-family: '微软雅黑';
+}
+.dsp-config .table-container .table tbody tr td.last-item {
+  border-left: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
+}
+.dsp-config .table-container .table tbody tr.last-item td {
+  border-bottom: 1px solid #ccc;
+}

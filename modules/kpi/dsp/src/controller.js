@@ -5,6 +5,10 @@ define(function(require, exports, module) {
 	var MainView = require('./view/main');
 	var dspInst = [];
 	
+	if(seajs.config.data.development){
+		require.async('../css/style.css');
+	}
+	
 	return function(options) {
 		var inst = options.args[0];
 		

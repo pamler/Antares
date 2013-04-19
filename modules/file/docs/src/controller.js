@@ -7,6 +7,10 @@ define(function(require, exports, module) {
 	require('jqgrid');
 	require('jqgrid-locale');
 	
+	if(seajs.config.data.development){
+		require.async(['../css/download.css','../css/query.css','../css/upload.css']);
+	}
+	
 	var uploadFileView, downloadFileView;
 	
 	return function(options) {

@@ -5,23 +5,32 @@ module.exports = function(grunt) {
     pkg: grunt.file.readJSON('package.json'),
     less: {
      development: {
-	    files: {
-	      'resources/css/module.css': ['modules/**/*.less']
-	    }
+	    files: [{
+  		  expand: true,
+  		  cwd: 'modules/',
+  		  src: ['**/*.less'],
+  		  dest: 'modules/',
+  		  ext: '.css'
+	    }]
 	  },
 	  production: {
-	    options: {
-	      yuicompress: true
-	    },
-	    files: {
-	      'resources/css/module-min.css': ['modules/**/*.less']
-	    }
+		  files:{
+			  'resources/css/module.css': ['modules/**/*.less']
+		  }
+	  },
+	  minify: {
+		  options: {
+		    yuicompress: true
+		  },
+		  files: {
+		    'resources/css/module-min.css': ['modules/**/*.less']
+		  } 
 	  }
 	},
 	 watch: {
        scripts: {
          files: ['modules/**/*.less'],
-         tasks: ['less:development']
+         tasks: ['less']
        }
      }
   });
@@ -31,6 +40,6 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-contrib-watch');
 
   // Default task(s).
-  grunt.registerTask('default', ['less:development', 'watch']);
+  grunt.registerTask('default', ['less', 'watch']);
 
 };

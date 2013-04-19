@@ -1,0 +1,30 @@
+.admin-log .box {
+  margin: 20px;
+  padding-bottom: 20px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+.admin-log .box form {
+  padding: 20px;
+  padding-bottom: 0px;
+  border-bottom: 1px solid #ccc;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffffff', endColorstr='#ffededed', GradientType=0);
+  background-image: -webkit-linear-gradient(top, #ffffff, #ededed);
+  background-image: -moz-linear-gradient(top, #ffffff, #ededed);
+  background-image: -o-linear-gradient(top, #ffffff, #ededed);
+  background-image: -ms-linear-gradient(top, #ffffff, #ededed);
+  background-image: linear-gradient(top, #ffffff, #ededed);
+}
+.admin-log .box form .control-label {
+  width: 100px;
+}
+.admin-log .box form .controls {
+  margin-left: 120px;
+}
+.admin-log .box form .form-actions {
+  background-color: transparent;
+  margin-bottom: 0px;
+}
+.admin-log .box .udp-grid {
+  margin-left: 20px;
+}

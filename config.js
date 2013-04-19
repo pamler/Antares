@@ -35,6 +35,8 @@ seajs.config({
 	
 	charset: 'utf-8',
 	
+	development: false, // 开发模式
+	
 	auth_strict: false, // 是否前台判权限
 	
 	modules: [		

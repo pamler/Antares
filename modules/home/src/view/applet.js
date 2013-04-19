@@ -7,7 +7,7 @@ define(function(require, exports, module) {
         '<ul>',
             '{@each list as lt}',
             	'<li>',
-            	'<b>@{lt.module}</b>更新至@{lt.date}',
+            	'<b>@{lt.module}更新至@{lt.date}</b>',
             	'{@if lt.module == "机构重点数据"}',
             		'<span class="entrance" data-type=dsp data-insid=@{lt.insId}>查看</span>',
         		'{@else if lt.module == "分公司重点指标"}',
@@ -70,8 +70,8 @@ define(function(require, exports, module) {
     					me.$el.find('.app-logo').html('<img src="resources/img/icon-file.png">');
     					me.$el.find('.app-version').html('版本号：v1.1 2013-03-20 发布');
     					me.$el.find('.content').html(
-							'<ul><li>'+'您有<b>' + res + '</b>个文件还未下载'+
-							'<span class="entrance">查看</span></ul></li>'
+							'<ul><li>'+'<b>您有' + res + '个文件还未下载</b>'+
+							'<span class="entrance">查看</span></li></ul>'
     					);
     				}
     			});

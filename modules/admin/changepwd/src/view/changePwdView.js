@@ -5,6 +5,10 @@ define(function(require, exports, module) {
     var Pwd = require('../model/pwdModel'),
     	pwd = new Pwd;
     
+    if(seajs.config.data.development){
+		require.async('../../css/style.css');
+	}
+    
     var changePwdView = Backbone.View.extend({
     	tagName: "div",
     	className: "home-change-pwd",

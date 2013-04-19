@@ -23,6 +23,20 @@
 					<span class="news-item-month">2013.05</span>
 				</div>
 			</li>
+			<hr style="border:0; border-top:1px dashed #ccc; height:1px;">
+			<li class="row-fluid">
+				<div class="news-item-detail span18">
+					<p class="title">浏览器使用建议</p>
+					<p class="preview">
+						为了使您的使用更流畅，视觉效果更出色，推荐使用chrome、firefox等现代浏览器，IE推荐
+						IE9及以上浏览器，遨游，360等浏览器推荐使用极速模式访问。
+					</p>
+				</div>
+				<div class="news-item-date span3 offset3">
+					<span class="news-item-day">22</span>
+					<span class="news-item-month">2013.05</span>
+				</div>
+			</li>
 			</ul>
 		</div>
 	</div>

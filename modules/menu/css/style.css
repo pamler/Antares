@@ -1,0 +1,65 @@
+.row-fluid .left-view {
+  border-right: 1px solid #bbb;
+  background: transparent url('/Antares/resources/img/bg-tree.png') repeat;
+  display: none;
+  left: -210px;
+  position: relative;
+}
+.row-fluid .left-view .left-menu {
+  padding: 0px 5px;
+  margin-top: 10px;
+}
+.row-fluid .left-view .left-menu h3 {
+  font-size: 13px;
+  border-radius: 4px;
+  padding: 5px 9px 5px 7px;
+  background-image: -webkit-linear-gradient(top, #ffffff, #eeeeee);
+  background-image: -moz-linear-gradient(top, #ffffff, #eeeeee);
+  background-image: -o-linear-gradient(top, #ffffff, #eeeeee);
+  background-image: -ms-linear-gradient(top, #ffffff, #eeeeee);
+  background-image: linear-gradient(top, #ffffff, #eeeeee);
+  filter: progid:dximagetransform.microsoft.gradient(startColorstr='#ffffffff', endColorstr='#ffeeeeee', GradientType=0);
+  text-shadow: 0 -1px 0 rgba(255, 255, 255, 0.25);
+  color: #444;
+  border: 1px solid #bbb;
+}
+.row-fluid .left-view .left-menu h3 .icon {
+  padding-left: 50px;
+  height: 27px;
+  line-height: 27px;
+  background: transparent url('/Antares/resources/img/accordion-icon.png') no-repeat;
+}
+.row-fluid .left-view .left-menu h3 .accordion-chart {
+  background-position: 0px -30px;
+}
+.row-fluid .left-view .left-menu h3 .accordion-file {
+  background-position: 0px -61px;
+}
+.row-fluid .left-view .left-menu h3 .accordion-admin {
+  background-position: 0px -92px;
+}
+.row-fluid .left-view .left-menu .home-btn {
+  cursor: pointer;
+}
+.row-fluid .left-view .left-menu h3.ui-state-active {
+  color: #fff;
+  background: #4e9ea8;
+  background-image: -webkit-linear-gradient(top, #5facb6, #47959f);
+  background-image: -moz-linear-gradient(top, #5facb6, #47959f);
+  background-image: -o-linear-gradient(top, #5facb6, #47959f);
+  background-image: -ms-linear-gradient(top, #5facb6, #47959f);
+  background-image: linear-gradient(top, #5facb6, #47959f);
+  filter: progid:dximagetransform.microsoft.gradient(startColorstr='#ff5facb6', endColorstr='#ff47959f', GradientType=0);
+  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+  border-color: #397780;
+}
+.row-fluid .left-view .left-menu .tree-navi {
+  background: #fff;
+  font-size: 13px;
+  padding-left: 0px;
+  padding-top: 5px;
+}
+.row-fluid .left-view .left-menu .jstree a {
+  margin-top: 5px;
+  *margin-top: 6px !important;
+}

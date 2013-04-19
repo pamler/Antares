@@ -38,6 +38,9 @@ define(function(require, exports, module) {
 	
 	function activateTab(e, ui){
 		if(ui.newTab.length != 0){
+			ui.newTab.find('i').removeClass('icon-white');
+			ui.oldTab.find('i').addClass('icon-white');
+			
 			tabs.tabs('option','collapsible',false);
 			
 			var node = '#'+ui.newTab.attr('id'),
@@ -49,9 +52,9 @@ define(function(require, exports, module) {
 			
 			// tab标签与左侧tree联动
 			$(appId+'-tree').jstree('set_focus').jstree("deselect_all");
+			
+			// 会再触发一次tree node的响应事件，因此需要在callback里判断
 			$.jstree._focused().select_node(node+'-node', false);
-			ui.newTab.find('i').removeClass('icon-white');
-			ui.oldTab.find('i').addClass('icon-white');
 		}
 	}
 	

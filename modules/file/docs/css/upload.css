@@ -1,0 +1,186 @@
+.row-fluid.file-manage .span20 {
+  margin: 20px 10px 0px 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background: #f7f7f7;
+  font-family: '微软雅黑';
+}
+.row-fluid.file-manage .span20 .header-box {
+  padding: 5px 30px 5px;
+  *padding: 0px;
+  background: #fff;
+  border-bottom: 1px solid #ebebeb;
+}
+.row-fluid.file-manage .span20 .header-box h2 {
+  font-size: 28px;
+  color: #444;
+  *margin: 15px 0px 10px 30px;
+}
+.row-fluid.file-manage .span20 .header-box h2 a {
+  float: right;
+  font-size: 12px;
+  color: #444;
+  display: block;
+  margin-top: 15px;
+  *margin-top: -20px;
+  width: 100px;
+  height: 29px;
+  line-height: 29px;
+  padding-left: 16px;
+  text-decoration: none;
+  background: transparent url('/Antares/resources/img/round-btn.png') no-repeat;
+}
+.row-fluid.file-manage .span20 .f-box {
+  margin-left: 0px;
+  border-bottom: 1px solid #ebebeb;
+}
+.row-fluid.file-manage .span20 .f-box .f-lbox {
+  background: #f7f7f7;
+  padding: 10px 0px;
+  font-size: 12px;
+}
+.row-fluid.file-manage .span20 .f-box .f-lbox h3 {
+  font-weight: normal;
+  text-align: center;
+  margin-bottom: 0px;
+  font-size: 14px;
+  padding-bottom: 0px;
+}
+.row-fluid.file-manage .span20 .f-box .f-lbox .add-btn {
+  margin-left: 40%;
+  display: block;
+  background: transparent url('/Antares/resources/img/add.png') no-repeat;
+  background-position: 0px -35px;
+  height: 16px;
+  width: 18px;
+}
+.row-fluid.file-manage .span20 .f-box .f-lbox .add-btn:hover {
+  background-position: 0px 0px;
+}
+.row-fluid.file-manage .span20 .f-box .f-lbox .check-all {
+  font-size: 12px;
+  margin: -1px 5px 0px 15px;
+}
+.row-fluid.file-manage .span20 .f-box .f-rbox {
+  background: #fff;
+  min-height: 120px;
+  min-height: 100px \9;
+  padding: 10px 20px 20px;
+  *width: 83%;
+}
+.row-fluid.file-manage .span20 .f-box .f-rbox .info {
+  font-size: 12px;
+  color: #999;
+}
+.row-fluid.file-manage .span20 .f-box .f-rbox textarea {
+  width: 400px;
+}
+.row-fluid.file-manage .span20 .f-box .persons-to-upload {
+  font-size: 12px;
+}
+.row-fluid.file-manage .span20 .f-box .persons-to-upload .persons-detail {
+  padding-top: 15px;
+  margin-top: 10px;
+  display: none;
+  width: 500px;
+  border-top: 1px solid #ddd;
+  float: left;
+  height: 150px;
+}
+.row-fluid.file-manage .span20 .f-box .persons-to-upload .persons-detail .persons-query {
+  float: left;
+}
+.row-fluid.file-manage .span20 .f-box .persons-to-upload .persons-detail .persons-query .prepend {
+  font-size: 12px;
+}
+.row-fluid.file-manage .span20 .f-box .persons-to-upload .persons-detail .persons-query .prepend input {
+  height: 16px;
+  width: 120px;
+  line-height: 16px;
+}
+.row-fluid.file-manage .span20 .f-box .persons-to-upload .persons-detail .persons-query .prepend select {
+  height: 28px;
+  width: 130px;
+}
+.row-fluid.file-manage .span20 .f-box .persons-to-upload .persons-detail .persons-query .btn {
+  font-size: 12px;
+  margin-top: 15px;
+}
+.row-fluid.file-manage .span20 .f-box .persons-to-upload .persons-detail .persons-list {
+  float: left;
+  margin-left: 40px;
+}
+.row-fluid.file-manage .span20 .f-box .persons-to-upload .persons-detail .persons-list select {
+  height: 120px;
+  cursor: default;
+  width: 250px;
+  overflow: auto;
+  font-size: 12px;
+}
+.row-fluid.file-manage .span20 .f-box .persons-to-upload .persons-detail .persons-list .help-block {
+  text-align: center;
+  font-size: 12px;
+}
+.row-fluid.file-manage .span20 .tag-list .tag {
+  font-size: 12px;
+  font-weight: normal;
+  border-radius: 3px;
+  padding: 2px 5px;
+  line-height: 20px;
+  color: #fff;
+  margin: 5px 5px 0px 0px;
+  display: inline-block;
+  background: transparent url(/Antares/resources/img/tag-bg.png) repeat;
+}
+.row-fluid.file-manage .span20 .tag-list .file-item {
+  font-size: 12px;
+  float: left;
+  font-weight: normal;
+  border-radius: 3px;
+  padding: 2px 5px;
+  line-height: 20px;
+  color: #fff;
+  margin-top: 5px;
+  display: block;
+  background: transparent url(/Antares/resources/img/tag-bg.png) repeat;
+}
+.row-fluid.file-manage .span20 .tag-list i {
+  cursor: pointer;
+  margin-right: 10px;
+}
+.row-fluid.file-manage .span20 .footer-box {
+  background: #fff;
+  margin-left: 0px;
+}
+.row-fluid.file-manage .span20 .footer-box button {
+  margin: 20px;
+}
+#upload-dialog form {
+  width: 600px;
+  height: 160px;
+  margin-bottom: 10px;
+  font-family: '微软雅黑';
+}
+#upload-dialog .hot-label {
+  width: 100%;
+  padding-bottom: 20px;
+  margin-bottom: 20px;
+  font-size: 20px;
+  font-weight: bold;
+  line-height: 40px;
+  color: #333;
+  border: 0;
+  border-bottom: 1px solid #bbbbbb;
+}
+#upload-dialog .hot-label span {
+  font-size: 13px;
+  font-weight: normal;
+  border-radius: 3px;
+  cursor: pointer;
+  padding: 2px 5px;
+  line-height: 20px;
+  color: #fff;
+  margin: 3px;
+  display: inline-block;
+  background: transparent url(/Antares/resources/img/tag-bg.png) repeat;
+}

@@ -15,8 +15,8 @@
 			padding-top:10px;
 			height:30px;
 			border-radius:3px 3px 0 0;
-			background:#3d3d3d url('../img/headerbox.png') repeat-x;
-			border-top:1px solid #444;	    
+			background:#3d3d3d url('/Antares/resources/img/headerbox.png') repeat-x;
+			border:1px solid #444;	    
 			
 			h3 {
 				font-size:15px;
@@ -36,7 +36,7 @@
 				display:block;
 				cursor:pointer;
 				margin-right:20px;
-				background:transparent url('../img/gear.png') no-repeat;
+				background:transparent url('/Antares/resources/img/gear.png') no-repeat;
 			}
 			
 			.tool:hover {
@@ -47,6 +47,8 @@
 				position:absolute;
 				display:none;
 				top:0px;
+				*width:0;
+				*height:0;
 				z-index:1001;
 				left:25px;
 				border-top:8px solid transparent;
@@ -83,7 +85,7 @@
 		}
 		
 		footer {
-			background:transparent url('../img/tableheader-bg.png') repeat-x;
+			background:transparent url('/Antares/resources/img/tableheader-bg.png') repeat-x;
 			
 			.btn {
 				margin:10px 20px;
@@ -97,7 +99,7 @@
 		.table{
 			margin-bottom:0px;
 			thead tr {
-				background:transparent url('../img/tableheader-bg.png') repeat-x;
+				background:transparent url('/Antares/resources/img/tableheader-bg.png') repeat-x;
 				font-size:12px;
 				color:#444;
 				border-top:1px solid #ccc;
@@ -105,7 +107,7 @@
 					text-align:center;
 				}
 				
-				th:last-child {
+				th.last-item {
 					border-left:1px solid #ccc;
 				}				
 			}
@@ -116,12 +118,12 @@
 				font-family:'微软雅黑';
 			}
 			
-			tbody td:last-child {
+			tbody tr td.last-item {
 				border-left:1px solid #ccc;
 				border-bottom:1px solid #ccc;
 			}
 			
-			tbody tr:last-child {
+			tbody tr.last-item td{
 				border-bottom:1px solid #ccc;
 			}
 		}

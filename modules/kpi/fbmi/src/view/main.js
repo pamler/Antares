@@ -168,6 +168,7 @@ define(function(require, exports, module) {
         			var leftEl = me.leftTemplate.render(collection.models[0].toJSON());
         			me.$el.find('.general-info .left-info').html(leftEl)
         				.find('a.view-detail').html('查看本月指标明细');
+        			
         			var arr = collection.toJSON(),
 	        			gadgetGroup, 
 	        			gadgetData,
@@ -242,7 +243,10 @@ define(function(require, exports, module) {
 			    			list: _.rest(arr)
 			    		};
 			    	me.$el.find('.bmi-subOptionBar')
-			    		.html(juicer(tpl, gadgetData)).slideDown();
+			    		.html(juicer(tpl, gadgetData)).slideDown(function(){
+			    			//获取chart数据
+		                	me.barChartLoad(me.ruleid);
+			    		});
 			    	
             		var el = juicer(gadgetTpl, gadgetData);
             		if(el){
@@ -260,8 +264,8 @@ define(function(require, exports, module) {
             		
             		me.$el.find('.bmi-maincontent').show();
             		
-            		//获取chart数据
-                	me.barChartLoad(me.ruleid);
+            		// 图形清空，等待重绘
+            		me.chart.$el.html('');
             	}
         	});
         },
@@ -360,7 +364,7 @@ define(function(require, exports, module) {
             			scoreValRank: arr[0].objValue,
             			totalPercent: arr[1].objValue,
             			weight: arr[2].objValue,
-            			changeInRank: (arr[6].objValue == -999999)?'--':arr[6].objValue,
+            			changeInRank: (arr[6].objValue == -999999)?'--':arr[6].objValue
             		};
         			var leftEl = me.leftTemplate.render(tmp);
             		me.$el.find('.general-info .left-info').html(leftEl).find('.belong-type')

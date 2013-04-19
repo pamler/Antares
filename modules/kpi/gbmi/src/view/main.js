@@ -32,7 +32,7 @@ define(function(require, exports, module) {
 		
 	    events: {
 	    	"click .nav li a": "tabChange",
-	    	"change .tab-pane.active select": "selectMonth",
+	    	"change .tab-pane.active select": "selectMonth"
 	    },
 	
 	    initialize: function() {
